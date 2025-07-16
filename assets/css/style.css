@@ -1,0 +1,15 @@
+/* Basic CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+.font-WorkSans {
+    font-family: "Work Sans", sans-serif;
+}
