@@ -51,6 +51,31 @@
         font-size: 2.25rem;
     }
 
+    /* Features Section */
+    .features {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .feature-architect img {
+        width: 100%;
+    }
+
+    .experience-badge {
+        position: relative;
+        display: block;
+        width: max-content;
+        margin-left: unset;
+        margin-top: unset;
+        margin: -85px auto 0 auto;
+        padding: 28px 48px;
+        z-index: 1;
+    }
+
+    .experience-badge h3 {
+        font-size: 2.8rem;
+    }
+
     /* Facts Section */
     .facts-container {
         grid-template-columns: repeat(2, 1fr);
@@ -97,6 +122,22 @@
     .our-features {
         margin-left: 0;
         margin-top: 48px;
+    }
+
+    /* Features Section */
+    .features {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .feature-architect img {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .experience-badge {
+        margin-left: auto;
     }
 
     /* Facts Section */
