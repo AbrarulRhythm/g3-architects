@@ -1,0 +1,17 @@
+@media screen and (max-width:576px) {
+
+    /*** Header Style ***/
+    .navbar,
+    .nav-item {
+        flex-direction: column;
+    }
+
+    .barnd-name {
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    .nav-link {
+        padding: 12px 0;
+    }
+}

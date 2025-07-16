@@ -1,4 +1,23 @@
 /* Basic CSS */
+/*** Variable Define ***/
+:root {
+    /* Font Family */
+    --font-primary: "Work Sans", sans-serif;
+
+    --body-bg: #FFF;
+    --primary-light-bg: rgba(255, 144, 14, 10%);
+
+    --dark-1: #131313;
+    --dark-2: #424242;
+    --dark-3: #727272;
+    --dark-4: #A1A1A1;
+    --dark-5: #D0D0D0;
+    --dark-6: #E7E7E7;
+    --dark-7: #F3F3F3;
+    --white-color: #FFF;
+    --primary-color: #FF900E;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +25,154 @@
 }
 
 body {
-    font-family: "Work Sans", sans-serif;
+    font-family: var(--font-primary);
+    font-size: 16px;
     font-weight: 400;
+    color: var(--dark-3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-1);
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.8;
 }
 
 .font-WorkSans {
-    font-family: "Work Sans", sans-serif;
+    font-family: var(--font-primary);
+}
+
+/*** Shared Style ***/
+.display-flex {
+    display: flex;
+}
+
+/* Colors */
+.primary-color {
+    color: var(--primary-color);
+}
+
+.primary-light-bg {
+    background-color: var(--primary-light-bg);
+}
+
+.dark-1 {
+    color: var(--dark-1);
+}
+
+.dark-2 {
+    color: var(--dark-2);
+}
+
+.dark-3 {
+    color: var(--dark-3);
+}
+
+.dark-4 {
+    color: var(--dark-4);
+}
+
+.dark-5 {
+    color: var(--dark-5);
+}
+
+.dark-6 {
+    color: var(--dark-6);
+}
+
+.dark-7 {
+    color: var(--dark-7);
+}
+
+.white-color {
+    color: var(--white-color);
+}
+
+/*** Button Style ***/
+.btn-primary {
+    width: max-content;
+    display: inline-block;
+    padding: 18px 28px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/*** Header Style ***/
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barnd-name {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.nav-item {
+    list-style: none;
+    padding: 0 16px;
+}
+
+.nav-link {
+    display: block;
+    padding: 45px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-2);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/*** Banner ***/
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.banner {
+    padding-top: 48px;
+}
+
+.banner-content {
+    max-width: 830px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.banner-content button {
+    margin-top: 24px;
+}
+
+.banner-image {
+    width: 100%;
 }
