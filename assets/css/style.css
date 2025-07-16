@@ -238,6 +238,7 @@ main {
     margin-top: 72px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
 
 .fact-card {
@@ -261,4 +262,26 @@ main {
     color: var(--dark-3);
     font-weight: 600;
     font-size: 1.2rem;
+}
+
+/* Our Sponspors */
+.sponspor-info {
+    max-width: 540px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sponspors-companies {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponspors-companies img {
+    filter: grayscale(100%);
+    transition: all .3s ease;
+}
+
+.sponspors-companies img:hover {
+    filter: grayscale(0);
 }
